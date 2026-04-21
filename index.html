@@ -547,8 +547,26 @@
         @media (max-width: 768px) {
             .hero h1 { font-size: 3rem; }
             .hero-stats { flex-direction: column; gap: 20px; }
-            .email-display { font-size: 1.5rem; }
-            nav { padding: 20px; flex-direction: column; gap: 15px; }
+            .email-display { font-size: 1.5rem; word-break: break-all; }
+            nav { padding: 15px; flex-direction: column; gap: 10px; }
+            
+            /* Disable custom cursor on mobile */
+            .cursor-dot, .cursor-outline, .cursor-hover { display: none !important; }
+            
+            /* Terminal responsive */
+            .terminal-container { margin: 50px auto; }
+            .terminal-body { padding: 20px; font-size: 0.85rem; }
+            
+            /* Timeline responsive */
+            .timeline-section { padding: 50px 20px; }
+            .timeline::before { left: 20px; }
+            .timeline-item { padding-left: 55px; margin-bottom: 40px; }
+            .timeline-icon { left: 0; width: 35px; height: 35px; font-size: 0.8rem; }
+            .timeline-content { padding: 20px; }
+            .timeline-content h3 { font-size: 1.2rem; }
+            
+            /* Speed up marquee */
+            .marquee { animation: slide 10s linear infinite; gap: 40px; }
         }
         /* --- TERMINAL ABOUT --- */
         .terminal-container {
